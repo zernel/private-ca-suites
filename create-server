@@ -92,4 +92,3 @@ popd > /dev/null
 echo
 echo "Server certificate created."
 echo
-

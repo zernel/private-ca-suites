@@ -38,6 +38,7 @@ echo
 init_ca_home ${HOME}
 generate_conf ${HOME}/bin/defaults.conf
 source ${HOME}/bin/defaults.conf
+CA_SAN="DNS.1:$CA_DOMAIN"
 
 echo
 echo -n "Enter passphase for encrypting root CA key: "
@@ -94,4 +95,3 @@ popd > /dev/null
 echo
 echo "Root CA initialized."
 echo
-
